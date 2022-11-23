@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>722</width>
+    <height>584</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>722</width>
+    <height>584</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #000000</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="text_mood">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>250</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: #22FF00;
+	background-color: rgba(0, 0, 0, 0)}</string>
+    </property>
+    <property name="text">
+     <string>Под настроение:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="genre_label">
+    <property name="geometry">
+     <rect>
+      <x>547</x>
+      <y>250</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: #22FF00;
+	background-color: rgba(0, 0, 0, 0)}</string>
+    </property>
+    <property name="text">
+     <string>Жанр:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="play_btn">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    border: 2px solid #22FF00;
+    border-radius: 20px;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 2px solid #20EF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    border: 3px solid #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pause_btn">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    border: 2px solid #22FF00;
+    border-radius: 20px;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 2px solid #20EF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    border: 3px solid #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stop_btn">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    border: 2px solid #22FF00;
+    border-radius: 20px;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 2px solid #20EF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    border: 3px solid #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="previous_btn">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    border: 2px solid #22FF00;
+    border-radius: 20px;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 2px solid #20EF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    border: 3px solid #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next_btn">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    border: 2px solid #22FF00;
+    border-radius: 20px;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 2px solid #20EF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    border: 3px solid #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="radio_label">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>0</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	color: #22FF00;
+	background-color: rgba(0, 0, 0, 0)}</string>
+    </property>
+    <property name="text">
+     <string>Включить радио</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="volume_slider">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>195</y>
+      <width>280</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::handle{
+    background-color:#199700;}
+QSlider {
+	background-color: rgba(0, 0, 0, 0)}</string>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="sliderPosition">
+     <number>50</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="music_timer">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>170</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid #22FF00;
+background-color: #052200;</string>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Filled</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stop_radio">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>60</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>Стоп</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>280</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}
+</string>
+    </property>
+    <property name="text">
+     <string>Спокойное</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">moods_btns</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>315</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>Весёлое</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">moods_btns</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>350</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>Грустное</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">moods_btns</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>385</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>Энергичное</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">moods_btns</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>420</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>8</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>Романтичное</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">moods_btns</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>420</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>Lo-Fi Hip Hop</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">genres_btns</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>315</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>Рок</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">genres_btns</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>350</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>Классика</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">genres_btns</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>280</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>R'n'B</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">genres_btns</string>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>385</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>Джаз/Блюз</string>
+    </property>
+    <attribute name="buttonGroup">
+     <string notr="true">genres_btns</string>
+    </attribute>
+   </widget>
+   <widget class="QLCDNumber" name="clock">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLCDNumber{
+    color: #22FF00;
+	background-color: rgba(0, 0, 0, 0)}</string>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Filled</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="date">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLCDNumber{
+    color: #22FF00;
+	background-color: rgba(0, 0, 0, 0)}</string>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Filled</enum>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="playlist">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>230</y>
+      <width>280</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget{
+    border: 1px solid #22FF00;
+    background-color: #052200;
+    color: #22FF00;}
+QListWidget::item:hover{
+    background-color: #072800;}
+QListWidget::item:selected{
+    background-color: #22FF00;
+    color: black;}</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="radio_list">
+    <property name="geometry">
+     <rect>
+      <x>575</x>
+      <y>23</y>
+      <width>141</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QListWidget{
+    border: 1px solid #22FF00;
+    background-color: #052200;
+    color: #22FF00;}
+QListWidget::item:hover{
+    background-color: #072800;}
+QListWidget::item:selected{
+    background-color: #22FF00;
+    color: black;}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_radio">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>30</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    color: #22FF00;
+    background-color: #052200;}
+QPushButton:hover{
+    border: 1px solid #22FF00;
+    background-color: #072800;}
+QPushButton:pressed{
+    color: black;
+    background-color: #22FF00;}</string>
+    </property>
+    <property name="text">
+     <string>Старт</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>40</y>
+      <width>221</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="eq_layout"/>
+   </widget>
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>721</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>background</zorder>
+   <zorder>text_mood</zorder>
+   <zorder>genre_label</zorder>
+   <zorder>play_btn</zorder>
+   <zorder>pause_btn</zorder>
+   <zorder>stop_btn</zorder>
+   <zorder>previous_btn</zorder>
+   <zorder>next_btn</zorder>
+   <zorder>radio_label</zorder>
+   <zorder>volume_slider</zorder>
+   <zorder>music_timer</zorder>
+   <zorder>stop_radio</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>pushButton_10</zorder>
+   <zorder>pushButton_7</zorder>
+   <zorder>pushButton_8</zorder>
+   <zorder>pushButton_6</zorder>
+   <zorder>pushButton_9</zorder>
+   <zorder>clock</zorder>
+   <zorder>date</zorder>
+   <zorder>playlist</zorder>
+   <zorder>radio_list</zorder>
+   <zorder>start_radio</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>722</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar {
+    color: #22FF00;
+    background-color: #052200;}
+QMenuBar::item:hover{
+    background-color: #072800;}
+</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="styleSheet">
+     <string notr="true">QMenu{
+	color: #22FF00;
+	background-color: #052200;}</string>
+    </property>
+    <property name="title">
+     <string>Время</string>
+    </property>
+    <addaction name="alarm_btn"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="styleSheet">
+     <string notr="true">QMenu{
+	color: #22FF00;
+	background-color: #052200;}</string>
+    </property>
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="background_set"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="alarm_btn">
+   <property name="text">
+    <string>Завести будильник</string>
+   </property>
+  </action>
+  <action name="background_set">
+   <property name="text">
+    <string>Поменять фон</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="genres_btns">
+   <property name="exclusive">
+    <bool>true</bool>
+   </property>
+  </buttongroup>
+  <buttongroup name="moods_btns"/>
+ </buttongroups>
+</ui>

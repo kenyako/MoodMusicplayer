@@ -1,0 +1,8 @@
+Pillow==9.2.0
+PyQt5==5.15.4
+python-vlc==3.0.16120
+sqlite3
+random
+time
+sys
+os

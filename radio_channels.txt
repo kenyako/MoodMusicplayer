@@ -1,0 +1,9 @@
+Эрмитаж|http://hermitage.hostingradio.ru/hermitage128.mp3
+Авторадио|https://pub0101.101.ru:8443/stream/air/mp3/256/100
+Лайк FM|https://pub0202.101.ru:8443/stream/air/aac/64/219
+Remix///FM|https://rmx.amgradio.ru/RemixFM?nocaches236514
+Радио ENERGY|https://pub0202.101.ru:8443/stream/air/aac/64/99
+Радио mCm|https://radio.irkmedia.ru:10443/hit128
+Relax FM|https://pub0202.101.ru:8443/stream/air/aac/64/200
+Хит FM|https://hitfm.hostingradio.ru/hitfm96.aacp
+Радио Ваня|https://icecast-radiovanya.cdnvideo.ru/radiovanya
